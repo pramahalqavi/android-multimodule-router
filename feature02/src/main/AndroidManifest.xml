@@ -3,8 +3,30 @@
     package="com.example.feature02">
 
     <application>
-        <activity android:name=".Activity02B"></activity>
-        <activity android:name=".Activity02A" />
+        <activity android:name=".Activity02B">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="activity-02-b"
+                    android:scheme="example" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity02A" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="activity-02-a"
+                    android:scheme="example" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

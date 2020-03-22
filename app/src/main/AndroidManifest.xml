@@ -9,14 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityAppB"></activity>
+        <activity android:name=".CoreActivity"></activity>
+        <activity android:name=".ActivityAppB" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="activity-app-b"
+                    android:scheme="example" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ActivityAppA">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
-                    android:host="activity-a"
+                    android:host="activity-app-a"
                     android:scheme="example" />
             </intent-filter>
         </activity>

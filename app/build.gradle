@@ -25,6 +25,8 @@ android {
 
 dependencies {
     api project(path: ':feature01')
+    api project(path: ':feature02')
+    api project(path: ':feature03')
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
