@@ -6,4 +6,105 @@
     android:layout_height="match_parent"
     tools:context=".Activity01B">
 
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity 01 B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <Button
+        android:id="@+id/bt_app_a"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="App A Deeplink"
+        android:textAllCaps="false"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/bt_01_a"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/bt_app_b"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="App B Classname"
+        android:textAllCaps="false"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/bt_01_b"
+        app:layout_constraintTop_toBottomOf="@id/bt_app_a" />
+    <Button
+        android:id="@+id/bt_01_a"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:text="01 A IRouter"
+        android:textAllCaps="false"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/bt_app_a"
+        app:layout_constraintRight_toLeftOf="@id/bt_02_a"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/bt_01_b"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:text="01 B IRouter"
+        android:textAllCaps="false"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/bt_app_b"
+        app:layout_constraintRight_toLeftOf="@id/bt_02_b"
+        app:layout_constraintTop_toBottomOf="@id/bt_app_a" />
+    <Button
+        android:id="@+id/bt_02_a"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="02 A Classname"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/bt_01_a"
+        app:layout_constraintRight_toLeftOf="@id/bt_03_a"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/bt_02_b"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="02 B Classname"
+        android:textAllCaps="false"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/bt_01_b"
+        app:layout_constraintRight_toLeftOf="@id/bt_03_b"
+        app:layout_constraintTop_toBottomOf="@id/bt_app_a" />
+    <Button
+        android:id="@+id/bt_03_a"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:text="03 A Deeplink"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/bt_02_a"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/bt_03_b"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:text="03 B Deeplink"
+        android:textAllCaps="false"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/bt_02_b"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_app_a" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
