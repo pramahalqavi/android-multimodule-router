@@ -9,9 +9,12 @@ import com.example.feature02.Activity02A
 import com.example.feature02.Activity02B
 import com.example.feature03.Activity03A
 import com.example.feature03.Activity03B
-import com.example.router.IRouter
+import com.example.router.Router
 
-class RouterImpl: IRouter {
+class RouterImpl: Router.IRouter {
+    init {
+        Router.init(this)
+    }
     override fun routeToAppA(activity: Activity, bundle: Bundle?) {
         val intent = Intent(activity, ActivityAppA::class.java)
         bundle?.let {
