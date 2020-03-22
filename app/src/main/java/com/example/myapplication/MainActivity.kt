@@ -1,9 +1,8 @@
 package com.example.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.router.DeeplinkRouter
+import com.example.base.CoreActivity
 import com.example.router.IRouter
 
 class MainActivity : CoreActivity() {

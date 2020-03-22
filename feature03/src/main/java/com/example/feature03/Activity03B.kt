@@ -2,8 +2,9 @@ package com.example.feature03
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.base.CoreActivity
 
-class Activity03B : AppCompatActivity() {
+class Activity03B : CoreActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

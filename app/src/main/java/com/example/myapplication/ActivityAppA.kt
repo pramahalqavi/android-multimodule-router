@@ -1,7 +1,7 @@
 package com.example.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.base.CoreActivity
 
 class ActivityAppA : CoreActivity() {
 

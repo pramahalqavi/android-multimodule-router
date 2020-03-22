@@ -1,2 +1,2 @@
-include ':app', ':router', ':feature01', ':feature02', ':feature03'
+include ':app', ':router', ':feature01', ':feature02', ':feature03', ':base'
 rootProject.name='My Application'
