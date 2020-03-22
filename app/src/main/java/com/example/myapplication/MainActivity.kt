@@ -3,6 +3,7 @@ package com.example.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.router.DeeplinkRouter
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,10 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findViewById<Button>(R.id.bt_act_a).setOnClickListener {
-            Router.navigateToActivityA(this)
+            RouterImpl.navigateToActivityA(this)
         }
         findViewById<Button>(R.id.bt_act_b).setOnClickListener {
-            Router.navigateToActivityB(this)
+            RouterImpl.navigateToActivityB(this)
         }
     }
 }
