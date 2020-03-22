@@ -15,6 +15,14 @@ class RouterImpl: Router.IRouter {
     init {
         Router.init(this)
     }
+
+    override fun routeToSplash(activity: Activity, bundle: Bundle?) {
+        val intent = Intent(activity, SplashActivity::class.java)
+        bundle?.let {
+            intent.putExtras(it)
+        }
+        activity.startActivity(intent)
+    }
     override fun routeToAppA(activity: Activity, bundle: Bundle?) {
         val intent = Intent(activity, ActivityAppA::class.java)
         bundle?.let {

@@ -37,6 +37,7 @@ object Router {
     }
 
     interface IRouter {
+        fun routeToSplash(activity: Activity, bundle: Bundle? = null)
         fun routeToAppA(activity: Activity, bundle: Bundle? = null)
         fun routeToAppB(activity: Activity, bundle: Bundle? = null)
         fun routeTo01A(activity: Activity, bundle: Bundle? = null)

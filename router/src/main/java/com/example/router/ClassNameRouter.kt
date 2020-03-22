@@ -5,6 +5,14 @@ import android.content.Intent
 import android.os.Bundle
 
 object ClassNameRouter {
+    fun routeToSplash(activity: Activity, bundle: Bundle?) {
+        val intent = Intent()
+        intent.setClassName(activity, "com.example.myapplication.SplashActivity")
+        bundle?.let {
+            intent.putExtras(it)
+        }
+        activity.startActivity(intent)
+    }
     fun routeToAppA(activity: Activity, bundle: Bundle? = null) {
         val intent = Intent()
         intent.setClassName(activity, "com.example.myapplication.ActivityAppA")
@@ -15,7 +23,7 @@ object ClassNameRouter {
     }
     fun routeToAppB(activity: Activity, bundle: Bundle? = null) {
         val intent = Intent()
-        intent.setClassName(activity, "com.example.myapplication.ActivityAppA")
+        intent.setClassName(activity, "com.example.myapplication.ActivityAppB")
         bundle?.let {
             intent.putExtras(it)
         }

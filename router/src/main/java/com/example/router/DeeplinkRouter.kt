@@ -7,6 +7,14 @@ import android.net.Uri
 
 
 object DeeplinkRouter {
+    fun routeToSplash(activity: Activity, bundle: Bundle?) {
+        val uri = Uri.parse("example://splash")
+        val intent = Intent(Intent.ACTION_VIEW, uri)
+        bundle?.let {
+            intent.putExtras(it)
+        }
+        activity.startActivity(intent)
+    }
     fun routeToAppA(activity: Activity, bundle: Bundle? = null) {
         val uri = Uri.parse("example://activity-app-a")
         val intent = Intent(Intent.ACTION_VIEW, uri)
